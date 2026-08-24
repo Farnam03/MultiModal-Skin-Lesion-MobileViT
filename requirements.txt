@@ -1,0 +1,9 @@
+torch
+torchvision
+timm
+gradio
+pytorch-grad-cam
+opencv-python
+pillow
+numpy
+pandas
