@@ -1,7 +1,7 @@
 # End-to-End Multi-Modal Deep Learning Framework for Intelligent Skin Lesion Screening
 ### Fusion of Dermoscopic Images and Clinical Data using MobileViT
 
-![Project Poster](poster.png)
+![Project Poster](docs/poster.png)
 
 ## 📌 Project Overview
 This repository provides an end-to-end, lightweight, and explainable multi-modal deep learning framework designed for early screening of skin lesions using the benchmark **HAM10000** dataset. 
@@ -36,6 +36,21 @@ The framework fuses **Dermoscopic Images** with **21-Dimensional Patient Clinica
 
 ---
 
+## 📈 Detailed Confusion Matrices & Classification Reports
+
+The experimental evolution across different phases demonstrates a significant reduction in false negatives, particularly for critical Melanoma (MEL) cases:
+
+### 1. Baseline Model (7 Classes)
+![Baseline Confusion Matrix](docs/cm_baseline_7class.png)
+
+### 2. Advanced Balanced Model V2 (7 Classes)
+![Balanced V2 Confusion Matrix](docs/cm_advanced_v2.png)
+
+### 3. Vision Backbone Model (4 Classes - High Convergence)
+![4 Classes Confusion Matrix](docs/cm_4class_final.png)
+
+---
+
 ## 📓 Interactive Training Notebooks (Kaggle)
 You can explore and run the full training pipelines directly on Kaggle:
 * **[Notebook 1: MultiModal Training Pipeline](https://www.kaggle.com/code/behrooz03/finalproject)** — Contains data preprocessing, MobileViT backbone training, metadata engineering, and Late Fusion.
@@ -58,7 +73,7 @@ All trained PyTorch weights across different experimental phases are publicly av
 ## 🛠️ Quick Start & Local Execution
 
 1. **Clone Repository:**
-   git clone [https://github.com/Farnam03/MultiModal-Skin-Lesion-MobileViT.git](https://github.com/Farnam03/MultiModal-Skin-Lesion-MobileViT.git)
+   git clone https://github.com/Farnam03/MultiModal-Skin-Lesion-MobileViT.git
    cd MultiModal-Skin-Lesion-MobileViT
 
 2. **Install Requirements:**
